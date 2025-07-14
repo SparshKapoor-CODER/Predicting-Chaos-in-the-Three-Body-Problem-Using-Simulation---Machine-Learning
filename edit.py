@@ -4,15 +4,6 @@ from openpyxl.utils import get_column_letter
 import time
 
 def color_rows_based_on_column_v(file_path, output_path, words_to_check):
-    """
-    Process an Excel file to color rows based on specific words in column V.
-    Prints progress messages to the terminal after each row.
-    
-    Args:
-        file_path (str): Path to the input Excel file
-        output_path (str): Path to save the modified Excel file
-        words_to_check (list): List of three words to check in column V
-    """
     
     # Define colors for each word (Red, Green, Blue)
     colors = [
