@@ -24,6 +24,8 @@ class ThreeBodySimulator3D:
                     acc[i] += G * self.masses[j] * r / np.linalg.norm(r) ** 3
         return acc
 
+
+    # Using Runge–Kutta 4 order method
     def rk4_step(self):
         dt = self.dt
 
@@ -131,7 +133,7 @@ velocities = [[0.466, 0.432, 0], [-0.932, -0.865, 0], [0.466, 0.432, 0]]
 
 
 # Central body is heavy others are light
-masses = [1.0, 0.001, 0.001]  # Central body is heavy, others are light
+masses = [1.0, 0.001, 0.001]  
 positions = [[0, 0, 0],[1, 0, 0],[0, 1, 0]]
 velocities = [[0, 0, 0],[0, 1, 0],[-1, 0, 0]]
 
