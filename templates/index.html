@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Body Problem Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Three-Body Problem Predictor</h1>
+        
+        <div class="input-section">
+            <h2>System Parameters</h2>
+            <div id="body-inputs">
+                <!-- Body inputs will be generated here -->
+            </div>
+            <button id="add-body-btn">Add Body</button>
+            <button id="predict-btn">Predict Outcome</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>Prediction Result</h2>
+            <div id="prediction-result">No prediction yet</div>
+            <div id="confidence"></div>
+        </div>
+        
+        <div class="simulation-section">
+            <h2>Simulation</h2>
+            <div id="simulation-container"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
