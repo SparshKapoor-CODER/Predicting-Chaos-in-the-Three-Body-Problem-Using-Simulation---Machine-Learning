@@ -89,10 +89,3 @@ def color_rows_based_on_column_v(file_path, output_path, words_to_check):
     except Exception as e:
         print(f"❌ Error saving file: {e}")
 
-# -------- Entry Point --------
-if __name__ == "__main__":
-    input_file = "three_body_dataset.xlsx"  # Change to your input file path
-    output_file = "three_body_dataset.xlsx"  # Change to your desired output path
-    words = ["collision", "stable", "escape"]  # The three words to check for
-    color_rows_based_on_column_v(input_file, output_file, words)
-    print(f"✅ Changes done successfully")
